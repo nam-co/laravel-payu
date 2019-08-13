@@ -11,7 +11,7 @@
   ],
   "require": {
     "php": ">=5.5.9",
-    "nesbot/carbon": "~1.0"
+    "nesbot/carbon": "^1.0"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.0",
@@ -24,5 +24,12 @@
     "psr-4": {
       "Alexo\\LaravelPayU\\": "src/"
     }
-  }
+  },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Alexo\\LaravelPayU\\LaravelPayUServiceProvider"
+            ]
+        }
+    }
 }
